@@ -151,13 +151,13 @@ Content-Type: application/json
 
 | 字段 | 类型 | 说明 |
 |---|---|---|
-| `url` | string? | 螃蟹平台商品链接或列表页链接 |
-| `detail_text` | string? | 商品详情文案（url 和 detail_text 至少提供一个） |
+| `url` | string | 螃蟹平台商品链接或列表页链接 |
+| `detail_text` | string | 商品详情文案（url 和 detail_text 至少提供一个） |
 | `purpose` | string | 购买用途，默认"共号/出租变现" |
-| `min_price` / `max_price` | number? | 预算区间 |
+| `min_price` / `max_price` | number | 预算区间 |
 | `max_items` | int | 列表页最多抓取数量（1-200，默认 60） |
 | `use_model` | bool | 是否使用 LLM 复核（默认 true） |
-| `custom_rules` | object? | 用户自定义规则，见下方说明 |
+| `custom_rules` | object | 用户自定义规则，见下方说明 |
 
 返回 SSE 流，事件类型包括：
 
