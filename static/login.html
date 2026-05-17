@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 王者荣耀账号评估 Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="login-page">
+    <main class="login-card">
+      <h1>王者荣耀账号评估</h1>
+      <p class="subtitle">登录以使用自定义评估规则</p>
+      <div id="loginTabs" class="tabs">
+        <button class="tab active" data-tab="login">登录</button>
+        <button class="tab" data-tab="register">注册</button>
+      </div>
+      <form id="loginForm" class="auth-form">
+        <label>
+          用户名
+          <input id="loginUsername" type="text" autocomplete="username" required />
+        </label>
+        <label>
+          密码
+          <input id="loginPassword" type="password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">登录</button>
+        <p id="loginError" class="error-msg"></p>
+      </form>
+      <form id="registerForm" class="auth-form hidden">
+        <label>
+          用户名
+          <input id="regUsername" type="text" minlength="2" maxlength="50" autocomplete="username" required />
+        </label>
+        <label>
+          密码
+          <input id="regPassword" type="password" minlength="4" autocomplete="new-password" required />
+        </label>
+        <label>
+          确认密码
+          <input id="regPassword2" type="password" minlength="4" autocomplete="new-password" required />
+        </label>
+        <button type="submit">注册</button>
+        <p id="regError" class="error-msg"></p>
+      </form>
+    </main>
+    <script src="/static/login.js"></script>
+  </body>
+</html>

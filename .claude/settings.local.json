@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const {chromium} = require\\('playwright'\\); console.log\\('playwright ok'\\);\")",
+      "Bash(node scripts/pxb7_crawler.mjs \"https://www.pxb7.com/buy/10013/1?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80\" 60 \"\" \"\")",
+      "Bash(curl *)",
+      "Bash(node scripts/pxb7_debug.mjs)",
+      "Bash(node scripts/pxb7_crawler.mjs \"https://www.pxb7.com/buy/10013/1?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80\" 20 \"\" \"\")",
+      "Bash(conda run *)",
+      "Bash(/d/anaconda3/envs/agent/python -m uvicorn app.main:app --host 127.0.0.1 --port 9910)",
+      "Bash(/d/anaconda3/envs/agent/python -c ' *)",
+      "Bash(pkill -f \"uvicorn app.main:app\")",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(python -c \"from sse_starlette.sse import EventSourceResponse; print\\('import ok'\\)\")",
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(pkill -f \"uvicorn app.main\")"
+    ]
+  }
+}
